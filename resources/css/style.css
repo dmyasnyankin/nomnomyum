@@ -211,8 +211,8 @@ header {
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: auto;
     float: left;
     margin-top: 20px;
 }
@@ -220,7 +220,7 @@ header {
 .black-logo { 
     display: none; 
     height: 50px;
-    width: 50px;
+    width: auto;
     float: left;
     margin: 5px 0;
 }
