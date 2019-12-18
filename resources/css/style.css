@@ -9,16 +9,19 @@ Blue color: 3498db
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -128,6 +131,7 @@ a:visited {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #3498db;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -147,6 +151,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 300px;
+    -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
     transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
@@ -188,6 +193,7 @@ input[type=submit]:active {
 /* ---------------------------- */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/wings.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/wings.jpg);
     height: 100vh;
     background-size: cover;
@@ -200,7 +206,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -229,6 +236,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -274,12 +282,17 @@ header {
     opacity: 0.7;
     width: 100%;
     height: 300px;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-pic img:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
     opacity: 1;
 }
 
@@ -359,6 +372,7 @@ header {
 /* ---------------------------- */
 
 .section-feedback {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/pizza-back.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/pizza-back.jpg);
     background-size: cover;
     color: #fff;
@@ -408,7 +422,8 @@ cite img {
     background-color: #fff;
     border-radius: 10px;
     margin-left: 5%;
-    box-shadow: 0 2px 2px #ededed;
+    -webkit-box-shadow: 0 2px 2px #ededed;
+            box-shadow: 0 2px 2px #ededed;
 }
 
 .plan-box div {
@@ -518,6 +533,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -535,6 +551,7 @@ footer {
 .twitter,
 .googleplus,
 .instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -559,3 +576,4 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+
