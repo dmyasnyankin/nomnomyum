@@ -89,4 +89,21 @@ $(document).ready(function() {
         offset: '50%'
     })
 
+    /* Hamburger Icon */
+    $('.js--hamburger').click(function () {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--hamburger i');
+
+        nav.slideToggle(200);
+
+
+        if (icon.hasClass('ion-android-menu')) {
+            icon.addClass('ion-android-close');
+            icon.removeClass('ion-android-menu');
+        } else {
+            icon.addClass('ion-android-menu');
+            icon.removeClass('ion-android-close');
+        }
+    })
+
 });
